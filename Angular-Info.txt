@@ -1,0 +1,107 @@
+1 Как може да сортираме в Database mongoDB
+2 mongo atlas и deploy
+
+Angular
+
+https://angular.io/guide/styleguide
+
+*ngIf
+*ngFor това са структорни дерективи
+
+локално инсталиран
+
+npx @angular/cli new имаето на проектра
+
+npx ng serve
+npx ng s пускам сървъра
+
+npx ng generate component името на компонента
+npx ng g        c
+
+npx ng generate modul името на модула
+npx ng g        m
+
+npx ng g d името на дерективата - и автоматично я добавя в app.module в declarations.
+
+npx ng g s името на service-са за http заявките
+
+npx ng g environments
+npx ng generate environments
+
+npx ng g pipe името на пайпа
+npx ng g p 
+
+npx ng g interceptor името на интерсептора
+npx ng g i?
+
+npx ng g guard името на гарда
+npx ng g g 
+
+Атрибютни дерективи:
+  -ngStyle - добавя стилове директно в HTML.
+  - ngClass - бодая клас в HTML и можем да му сетваме стойностите на true false 
+Структурни дериктиви те започват съм *:
+  - * е синтактична захар от Angular freamwork 
+  -ngIf - на базата на някаво условие рендерира HTML.
+	
+
+jsonplaceholder - изпозлване на данни от сървър
+https://jsonplaceholder.typicode.com/
+
+Authentication in Angular
+https://blog.angular-university.io/angular-jwt-authentication/
+
+osi модел
+https://www.google.com/search?q=osi+model&rlz=1C1YTUH_enBG1013BG1013&oq=osi+model&aqs=chrome..69i57j0i512l9.2572j0j7&sourceid=chrome&ie=UTF-8
+
+deploy in GitHub pages
+https://www.youtube.com/watch?v=iYwboA7CVlE
+
+AWS https://www.youtube.com/watch?v=7vf210p2tJg
+------------------------------------------------------------------------------------------------
+README на проекта преди deploy:
+
+# CrossFit-Angular-Project
+
+This is an app that lets you share your favorite workout or find one. If you are not a logged in user, you can see in the navigation: home, all workouts,login and register. After successful registration or login, the navigation changes and now you can see the workouts created by you and create new ones, edit, delete, like and search. Start training, change your life!
+
+# Technologies Used
+ - Angular CLI
+ - TypeScript
+ - Node.js
+ - Express.js
+ - MongoDB with Mongoose
+
+# Installation
+ - Clone the repository: https://github.com/MADNMD/CrossFit-Angular-Project.git
+  # Rest-Api
+   - Navigate to the project folder: `cd Rest-api`
+   - Install dependencies: `npm i`
+ # crossFit-app
+  - Navigate to the project folder: `cd crossFit-app`
+  - Install dependencies: `npm i`
+
+# Usage
+ - Run the server: `npm start`
+ - Server is listening at port 3000: `http://localhost:3000`
+ - ---------------------------
+ - Run the Angular app: `npx ng s`
+ - Access the app in your browser at: `http://localhost:4200`
+
+# API Endpoints
+ - `POST /users/login`: Logged user
+ - `POST /users/register`: Register user
+ - `GET /users/logout`: Logout user
+ - `GET /users/user`: The currently logged user
+ - `GET /workouts/allWorkouts`:  Get a list of all workouts
+ - `POST /workouts/create`: Create a new workout
+ - `GET /workouts/details/:workoutId`: Ddetails a workout by ID
+ - `PUT /wokrouts/edit/:workoutId`: Update an existing workout by ID
+ - `DELETE /workouts/delete/:workoutId`: Delete a workout by ID
+ - `GET /workouts/myWorkouts/:userId`: Get all workouts created by a specific user
+ - `POST /workouts/like/:workoutId`: Like a workout by ID
+ - `POST /workouts/unlike/:workoutId`: Unlike a workout by ID
+
+   # License
+   - MIT License
+
