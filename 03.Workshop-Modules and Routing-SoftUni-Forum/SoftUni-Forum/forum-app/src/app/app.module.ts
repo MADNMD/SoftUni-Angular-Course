@@ -3,24 +3,36 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HomeComponent } from './home/home.component';
+import { CoreModule } from './core/core.module';
 import { MainComponent } from './main/main.component';
-import { PostsListComponent } from './posts-list/posts-list.component';
 import { ThemesListComponent } from './themes-list/themes-list.component';
+import { PostsListComponent } from './posts-list/posts-list.component';
+import { HttpClientModule } from '@angular/common/http';
+import { SharedModule } from './shared/shared.module';
+import { HomeComponent } from './home/home.component';
+import { UserModule } from './user/user.module';
+import { ThemeModule } from './theme/theme.module';
+import { RouterModule } from '@angular/router';
 import { WelcomeComponent } from './welcome/welcome.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent,
     MainComponent,
-    PostsListComponent,
     ThemesListComponent,
+    PostsListComponent,
+    HomeComponent,
     WelcomeComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    CoreModule,
+    HttpClientModule,
+    SharedModule,
+    UserModule,
+    ThemeModule,
+    RouterModule,
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
