@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { LoaderComponent } from './loader/loader.component';
 import { EmailDirective } from './validators/email.directive';
 import { ElapsedTimePipe } from './pipes/elapsed-time.pipe';
+import { SlicePipe } from './pipes/slice.pipe';
 
 
 
@@ -10,7 +11,8 @@ import { ElapsedTimePipe } from './pipes/elapsed-time.pipe';
   declarations: [
     LoaderComponent,
     EmailDirective,
-    ElapsedTimePipe
+    ElapsedTimePipe,
+    SlicePipe
   ],
   imports: [
     CommonModule
