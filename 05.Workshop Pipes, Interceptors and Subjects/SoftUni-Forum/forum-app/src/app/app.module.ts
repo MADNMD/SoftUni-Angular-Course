@@ -7,6 +7,7 @@ import { HomeComponent } from './home/home.component';
 import { MainComponent } from './main/main.component';
 import { PostsListComponent } from './posts-list/posts-list.component';
 import { EmailDirective } from './shtared/validators/email.directive';
+import { ThemesListComponent } from './themes-list/themes-list.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { EmailDirective } from './shtared/validators/email.directive';
     HomeComponent,
     MainComponent,
     PostsListComponent,
-    EmailDirective
+    EmailDirective,
+    ThemesListComponent
   ],
   imports: [
     BrowserModule,
