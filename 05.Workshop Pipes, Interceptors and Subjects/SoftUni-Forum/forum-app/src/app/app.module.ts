@@ -3,28 +3,39 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HomeComponent } from './home/home.component';
+import { CoreModule } from './core/core.module';
 import { MainComponent } from './main/main.component';
-import { PostsListComponent } from './posts-list/posts-list.component';
-import { EmailDirective } from './shtared/validators/email.directive';
 import { ThemesListComponent } from './themes-list/themes-list.component';
+import { PostsListComponent } from './posts-list/posts-list.component';
+import { HttpClientModule } from '@angular/common/http';
+import { SharedModule } from './shared/shared.module';
+import { HomeComponent } from './home/home.component';
+import { ThemeModule } from './theme/theme.module';
+import { RouterModule } from '@angular/router';
 import { WelcomeComponent } from './welcome/welcome.component';
+import { appInteceptorProvider } from './app.interceptor';
+import { AuthenticateComponent } from './authenticate/authenticate.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent,
     MainComponent,
-    PostsListComponent,
-    EmailDirective,
     ThemesListComponent,
-    WelcomeComponent
+    PostsListComponent,
+    HomeComponent,
+    WelcomeComponent,
+    AuthenticateComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    CoreModule,
+    HttpClientModule,
+    SharedModule,
+    ThemeModule,
+    RouterModule,
+    AppRoutingModule,
   ],
-  providers: [],
+  providers: [appInteceptorProvider],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
