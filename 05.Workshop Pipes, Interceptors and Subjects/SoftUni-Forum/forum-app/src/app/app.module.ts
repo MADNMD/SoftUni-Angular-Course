@@ -8,6 +8,7 @@ import { MainComponent } from './main/main.component';
 import { PostsListComponent } from './posts-list/posts-list.component';
 import { EmailDirective } from './shtared/validators/email.directive';
 import { ThemesListComponent } from './themes-list/themes-list.component';
+import { WelcomeComponent } from './welcome/welcome.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { ThemesListComponent } from './themes-list/themes-list.component';
     MainComponent,
     PostsListComponent,
     EmailDirective,
-    ThemesListComponent
+    ThemesListComponent,
+    WelcomeComponent
   ],
   imports: [
     BrowserModule,
