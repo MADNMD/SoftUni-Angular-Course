@@ -2,7 +2,7 @@ import { HTTP_INTERCEPTORS, HttpEvent, HttpHandler, HttpInterceptor, HttpRequest
 import { Injectable, Provider } from "@angular/core";
 import { Router } from "@angular/router";
 import { Observable, catchError } from "rxjs";
-import { environment } from "src/environments/environment.development";
+import { environment } from "../environments/environments.developments";
 import { ErrorService } from "./core/error/error.service";
 
 const { appUrl } = environment
